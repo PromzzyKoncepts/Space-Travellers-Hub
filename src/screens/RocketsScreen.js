@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-function RocketsScreen(props) {
+function RocketsScreen() {
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
     </div>
   );

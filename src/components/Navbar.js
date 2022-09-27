@@ -1,8 +1,9 @@
-import logoImg from '../resources/img/planet.png';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Navbar(props) {
+import logoImg from '../resources/img/planet.png';
+
+function Navbar() {
   return (
     <nav className="navBar">
       <div className="logoContainer">

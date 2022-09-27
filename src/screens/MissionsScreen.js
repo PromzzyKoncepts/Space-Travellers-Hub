@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-function MissionsScreen(props) {
+function MissionsScreen() {
   return (
-    <div className='App' >
+    <div className="App">
       <Navbar />
     </div>
   );
