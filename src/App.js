@@ -1,11 +1,15 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import RocketsScreen from './screens/RocketsScreen';
+import MissionsScreen from './screens/MissionsScreen';
+
 
 function App() {
   return (
-    <div className="App">
-     <Navbar />
-    </div>
+        <Routes>
+          <Route path="/missions" exact element={<MissionsScreen />} />
+          <Route path="/" exact element={<RocketsScreen />} />
+        </Routes>
   );
 }
 
