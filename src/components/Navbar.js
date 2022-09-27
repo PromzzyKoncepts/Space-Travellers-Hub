@@ -18,8 +18,8 @@ function Navbar() {
             end
             style={({ isActive }) => ({
               color: isActive ? '#00D7C6' : 'none',
-              fontWeight: isActive? '900' : 'regular',
-              fontSize: isActive? '20px' : 'regular',
+              fontWeight: isActive ? '900' : 'regular',
+              fontSize: isActive ? '20px' : 'regular',
             })}
           >
             Rockets
@@ -31,8 +31,8 @@ function Navbar() {
             to="/missions"
             style={({ isActive }) => ({
               color: isActive ? '#00D7C6' : 'none',
-              fontWeight: isActive? '900' : 'regular',
-              fontSize: isActive? '20px' : 'regular',
+              fontWeight: isActive ? '900' : 'regular',
+              fontSize: isActive ? '20px' : 'regular',
             })}
           >
             Missions
