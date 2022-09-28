@@ -17,7 +17,9 @@ function Navbar() {
             to="/"
             end
             style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : 'none',
+              color: isActive ? '#00D7C6' : 'none',
+              fontWeight: isActive ? '900' : 'regular',
+              fontSize: isActive ? '20px' : 'regular',
             })}
           >
             Rockets
@@ -28,7 +30,9 @@ function Navbar() {
             className="navLink"
             to="/missions"
             style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : 'none',
+              color: isActive ? '#00D7C6' : 'none',
+              fontWeight: isActive ? '900' : 'regular',
+              fontSize: isActive ? '20px' : 'regular',
             })}
           >
             Missions

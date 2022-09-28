@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Montserrat&family=Poppins&family=Roboto:wght@700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 
 .App {
@@ -19,11 +22,6 @@
   color: black;
   text-decoration: none;
 }
-
-/* .active {
-  text-decoration: underline;
-  color: red;
-} */
 
 .navBar {
   display: flex;
@@ -60,4 +58,25 @@
 
 .navigationItem {
   list-style: none;
+}
+
+/* this part is for the rockets  */
+.card-container {
+  display: flex;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.images {
+  width: 400px;
+}
+
+.btn {
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 550;
+  color: #fff;
 }
