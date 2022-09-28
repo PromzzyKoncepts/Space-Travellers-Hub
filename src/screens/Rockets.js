@@ -5,7 +5,6 @@ import React from 'react';
 
 const Rockets = (item) => {
   const { flickr_images, rocket_name, description } = item;
-  console.log(flickr_images);
   return (
     <div className="card-container">
       <div>
