@@ -6,23 +6,16 @@ const url = 'https://api.spacexdata.com/v3/rockets';
 
 export const fetchRockets = createAsyncThunk(FETCH,
   async () => fetch(url).then((res) => res.json()));
-console.log(fetch(url).then((res) => res.json()), '>>>>>>>');
 const postSlice = createSlice(({
   name: 'posts',
   initialState: {
     posts: [],
-    loading: false,
+    loading: 'idle',
   },
   extraReducers: {
-    [fetchRockets.pending]: (state) => {
-      state.loading = true;
-    },
     [fetchRockets.fulfilled]: (state, action) => {
-      state.loading = false;
       state.posts = action.payload;
-    },
-    [fetchRockets.rejected]: (state) => {
-      state.loading = false;
+      state.loading = 'fulfiled';
     },
   },
 }));

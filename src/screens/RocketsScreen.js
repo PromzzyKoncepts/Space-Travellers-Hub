@@ -5,13 +5,15 @@ import { fetchRockets } from '../Redux/RocketScreen/rocketscreen';
 import Rockets from './Rockets';
 
 function RocketsScreen() {
-  const { posts, loading } = useSelector(((state) => state.post));
+  const { posts, loading } = useSelector((state) => state.post);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    if (loading === 'idle') {
+      dispatch(fetchRockets());
+    }
+  }, []);
 
-  if (loading) {
+  if (loading === 'idle') {
     return <h2>Loading...</h2>;
   }
   return (

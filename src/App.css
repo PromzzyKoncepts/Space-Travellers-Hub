@@ -80,3 +80,118 @@
   font-weight: 550;
   color: #fff;
 }
+
+.tableContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table {
+  width: 90%;
+}
+
+.tableRow {
+  display: flex;
+  width: 100%;
+}
+
+.tableHeader {
+  border: solid 1px #999;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1.5;
+  border: solid 1px #999;
+  padding: 5px;
+}
+
+.flex5 {
+  flex: 5;
+  border: solid 1px #999;
+  padding: 5px;
+}
+
+.rvBtn {
+  padding: 5px;
+  background-color: #eee;
+  color: red;
+  border-color: red;
+  outline: red;
+  border-radius: 5px;
+}
+
+.normalBtn {
+  padding: 5px;
+  background-color: white;
+  color: green;
+  border-color: green;
+  outline: green;
+  border-radius: 5px;
+}
+
+.status1 {
+  font-size: 14px;
+  background-color: #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.status2 {
+  font-size: 14px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.myMissions {
+  flex: 1;
+}
+
+.myRockets {
+  flex: 1;
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  border: solid 1px #999;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
