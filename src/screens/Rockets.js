@@ -7,14 +7,14 @@ const Rockets = (item) => {
   const { flickr_images, rocket_name, description } = item;
   console.log(flickr_images);
   return (
-    <div>
+    <div className="card-container">
       <div>
-        <img src={flickr_images} alt="rocket" />
+        <img src={flickr_images} className="images" alt="rocket" />
       </div>
       <div>
         <h2>{rocket_name}</h2>
         <p>{description}</p>
-        <button type="button">Reserve Rocket</button>
+        <button className="btn" type="button">Reserve Rocket</button>
       </div>
     </div>
   );
