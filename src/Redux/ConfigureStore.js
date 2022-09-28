@@ -6,7 +6,7 @@ import postReducer from './RocketScreen/rocketscreen';
 const store = configureStore({
   reducer: {
     post: postReducer,
-    missions: missionsReducer
+    missions: missionsReducer,
   },
 }, applyMiddleware(thunk));
 
