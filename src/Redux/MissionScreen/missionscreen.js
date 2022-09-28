@@ -48,7 +48,6 @@ export const missionsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getMissions.fulfilled, (state, action) => {
-      console.log(action.payload.data, 'missions data');
       state.missions = action.payload.data;
       state.loading = 'fulfiled';
     });
