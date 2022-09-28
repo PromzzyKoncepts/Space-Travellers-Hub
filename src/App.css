@@ -80,3 +80,36 @@
   font-weight: 550;
   color: #fff;
 }
+
+.tableContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table {
+  width: 90%;
+}
+
+.tableRow {
+  display: flex;
+  width: 100%;
+}
+
+.tableHeader {
+  border: solid 1px #eee;
+}
+
+.flex1 {
+  flex: 1.5;
+  border: solid 1px #eee;
+  padding: 5px;
+}
+
+.flex5 {
+  flex: 5;
+  border: solid 1px #eee;
+  padding: 5px;
+}
