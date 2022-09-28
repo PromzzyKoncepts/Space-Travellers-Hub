@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { leaveRocket, reserveRocket } from "../Redux/RocketScreen/rocketscreen";
 
@@ -15,11 +15,21 @@ const Rockets = (item) => {
       <div>
         <h2>{rocket_name}</h2>
         <p>
-          {reserved && "reserved"}
+          <span
+            style={{
+              backgroundColor: reserved ? "#007bff" : "grey",
+              color: reserved ? "#fff" : "#000",
+              padding: reserved ? "5px 10px" : "0",
+              marginRight: reserved ? "10px" : "0",
+              borderRadius: reserved ? "5px" : "0",
+            }}
+          >
+            {reserved && "reserved"}
+          </span>
           {description}
         </p>
         <button
-          style={{ backgroundColor: reserved ? "gray" : "blue" }}
+          style={{ backgroundColor: reserved ? "gray" : "#007bff" }}
           className="btn"
           type="button"
           onClick={() => {

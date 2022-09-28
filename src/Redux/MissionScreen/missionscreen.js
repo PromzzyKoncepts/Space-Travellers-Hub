@@ -1,11 +1,11 @@
 /* eslint-disable no-param-reassign */
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const baseUrl = "https://api.spacexdata.com/v3/missions";
+const baseUrl = 'https://api.spacexdata.com/v3/missions';
 
 export const getMissions = createAsyncThunk(
-  "missions/getMissions",
+  'missions/getMissions',
   async () => {
     try {
       const response = axios.get(baseUrl);
@@ -13,16 +13,16 @@ export const getMissions = createAsyncThunk(
     } catch (error) {
       return error;
     }
-  }
+  },
 );
 
 const initialState = {
   missions: [],
-  loading: "idle",
+  loading: 'idle',
 };
 
 export const missionsSlice = createSlice({
-  name: "missions",
+  name: 'missions',
   initialState,
   reducers: {
     reserve: (state, action) => {
@@ -48,9 +48,9 @@ export const missionsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getMissions.fulfilled, (state, action) => {
-      console.log(action.payload.data, "missions data");
+      console.log(action.payload.data, 'missions data');
       state.missions = action.payload.data;
-      state.loading = "fulfiled";
+      state.loading = 'fulfiled';
     });
   },
 });

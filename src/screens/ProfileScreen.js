@@ -1,7 +1,7 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Navbar from '../components/Navbar';
+import ProfileCard from '../components/ProfileCard';
 
 function ProfileScreen() {
   const { missions } = useSelector((state) => state.missions);

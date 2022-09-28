@@ -1,19 +1,19 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import Navbar from "../components/Navbar";
-import { fetchRockets } from "../Redux/RocketScreen/rocketscreen";
-import Rockets from "../components/Rockets";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Navbar from '../components/Navbar';
+import { fetchRockets } from '../Redux/RocketScreen/rocketscreen';
+import Rockets from '../components/Rockets';
 
 function RocketsScreen() {
   const { posts, loading } = useSelector((state) => state.post);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (loading === "idle") {
+    if (loading === 'idle') {
       dispatch(fetchRockets());
     }
   }, []);
 
-  if (loading === "idle") {
+  if (loading === 'idle') {
     return <h2>Loading...</h2>;
   }
   return (

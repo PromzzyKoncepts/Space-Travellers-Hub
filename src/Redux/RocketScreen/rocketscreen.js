@@ -1,17 +1,15 @@
 /* eslint-disable no-param-reassign */
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const FETCH = "redux/RocketScreen/rocketscreen/FETCH";
-const url = "https://api.spacexdata.com/v3/rockets";
+const FETCH = 'redux/RocketScreen/rocketscreen/FETCH';
+const url = 'https://api.spacexdata.com/v3/rockets';
 
-export const fetchRockets = createAsyncThunk(FETCH, async () =>
-  fetch(url).then((res) => res.json())
-);
+export const fetchRockets = createAsyncThunk(FETCH, async () => fetch(url).then((res) => res.json()));
 const postSlice = createSlice({
-  name: "posts",
+  name: 'posts',
   initialState: {
     posts: [],
-    loading: "idle",
+    loading: 'idle',
   },
   reducers: {
     reserveRocket: (state, action) => {
@@ -37,9 +35,8 @@ const postSlice = createSlice({
   },
   extraReducers: {
     [fetchRockets.fulfilled]: (state, action) => {
-      console.log(action.payload);
       state.posts = action.payload;
-      state.loading = "fulfiled";
+      state.loading = 'fulfiled';
     },
   },
 });
