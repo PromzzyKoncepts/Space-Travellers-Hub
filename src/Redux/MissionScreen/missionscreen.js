@@ -4,19 +4,14 @@ import axios from 'axios';
 
 const baseUrl = 'https://api.spacexdata.com/v3/missions';
 
-export const getMissions = createAsyncThunk(
-  'missions/getMissions',
-  async () => {
-    try {
-      const response = axios.get(baseUrl);
-      console.log(response)
-      return response;
-    } catch (error) {
-      console.log(error)
-      return error;
-    }
-  },
-);
+export const getMissions = createAsyncThunk('missions/getMissions', async () => {
+  try {
+    const response = axios.get(baseUrl);
+    return response;
+  } catch (error) {
+    return error;
+  }
+});
 
 const initialState = {
   missions: [],
