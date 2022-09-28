@@ -18,7 +18,7 @@ function MissionsScreen() {
 
   let renderMissions = null;
   if (missions && missions.length > 0) {
-    renderMissions = missions.map((item) => (
+    renderMissions = missions.map((item, index) => (
       <TableRow
         key={item.mission_id}
         name={item.mission_name}
@@ -27,6 +27,7 @@ function MissionsScreen() {
         reserved={item.reserved}
         reserveMission={reserveMission}
         leaveMission={leaveMission}
+        index={index}
       />
     ));
   }

@@ -99,17 +99,56 @@
 }
 
 .tableHeader {
-  border: solid 1px #eee;
+  border: solid 1px #999;
 }
 
 .flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1.5;
-  border: solid 1px #eee;
+  border: solid 1px #999;
   padding: 5px;
 }
 
 .flex5 {
   flex: 5;
-  border: solid 1px #eee;
+  border: solid 1px #999;
+  padding: 5px;
+}
+
+.rvBtn {
+  padding: 5px;
+  background-color: #eee;
+  color: red;
+  border-color: red;
+  outline: red;
+  border-radius: 5px;
+}
+
+.normalBtn {
+  padding: 5px;
+  background-color: white;
+  color: green;
+  border-color: green;
+  outline: green;
+  border-radius: 5px;
+}
+
+.status1 {
+  font-size: 14px;
+  background-color: #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.status2 {
+  font-size: 14px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
   padding: 5px;
 }
