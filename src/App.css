@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: 'poppins', 'Roboto';
 }
 
 .App {
@@ -58,4 +58,25 @@
 
 .navigationItem {
   list-style: none;
+}
+
+/* this part is for the rockets  */
+.card-container {
+  display: flex;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.images {
+  width: 400px;
+}
+
+.btn {
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 550;
+  color: #fff;
 }
