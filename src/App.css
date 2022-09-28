@@ -152,3 +152,46 @@
   border-radius: 10px;
   padding: 5px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.myMissions {
+  flex: 1;
+}
+
+.myRockets {
+  flex: 1;
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  border: solid 1px #999;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}

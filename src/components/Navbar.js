@@ -38,6 +38,19 @@ function Navbar() {
             Missions
           </NavLink>
         </li>
+        <li className="navigationItem">
+          <NavLink
+            className="navLink"
+            to="/profile"
+            style={({ isActive }) => ({
+              color: isActive ? '#00D7C6' : 'none',
+              fontWeight: isActive ? '900' : 'regular',
+              fontSize: isActive ? '20px' : 'regular',
+            })}
+          >
+            My Profile
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
