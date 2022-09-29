@@ -1,38 +1,47 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Travelers Hub
 
-> Description the project.
+> This is a web based app which is showing information about the spaceX rockets and missions.
+> A user can reserve rockets and missions with the app.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, JavaScript
+- React
+- Redux
+- WebPack 
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://spacehubb.netlify.app/)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Install node.js and npm.
+- Install Git.
+
 ### Setup
 
+- Clone the repository by running the following command in your terminal:
+    git clone https://github.com/HabibPayenda/mathMagicians.git
+    
+- Change your directory by by running the following command in your terminal:
+    cd space-hub
+
 ### Install
+- Install the dependencies by running npm i in your terminal
 
 ### Usage
 
-### Run tests
+- After all the dependencies are installed open the app by running npm start in your terminal
+
 
 ### Deployment
 
@@ -40,17 +49,18 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **PROMISE OKECHUKWU**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@promzzykoncepts](https://github.com/PromzzyKoncepts)
+- Twitter: [@pr0mzzy](https://twitter.com/prOmzzy)
+- LinkedIn: [promiseokechukwu](https://linkedin.com/in/promiseokechukwu)
 
-👤 **Author2**
+👤 **Habib Payenda**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@HabibPayenda](https://github.com/githubhandle)
+- Twitter: [@HabibPayenda](https://twitter.com/twitterhandle)
+- LinkedIn: [@HabibPayenda](https://linkedin.com/in/linkedinhandle)
+
 
 ## 🤝 Contributing
 
@@ -70,6 +80,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
