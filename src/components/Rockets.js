@@ -35,7 +35,7 @@ const Rockets = (item) => {
           className="btn"
           type="button"
           onClick={
-            reserved ? dispatch(leaveRocket(id)) : dispatch(reserveRocket(id))
+            reserved ? () => dispatch(leaveRocket(id)) : () => dispatch(reserveRocket(id))
           }
         >
           {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
@@ -44,5 +44,4 @@ const Rockets = (item) => {
     </div>
   );
 };
-
 export default Rockets;

@@ -13,9 +13,9 @@ function RocketsScreen() {
     }
   }, []);
 
-  if (loading === 'idle') {
-    return <h2>Loading...</h2>;
-  }
+  // if (loading === 'idle') {
+  //   return <h2>Loading...</h2>;
+  // }
   return (
     <div className="App">
       <Navbar />
