@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Component correctly 1`] = `
+<nav
+  className="navBar"
+>
+  <div
+    className="logoContainer"
+  >
+    <img
+      alt="logo"
+      className="logo"
+      src="planet.png"
+    />
+    <p
+      className="logoText"
+    >
+      Space Travelers Hub
+    </p>
+  </div>
+  <ul
+    className="navigationContainer"
+  >
+    <li
+      className="navigationItem"
+    >
+      <a
+        aria-current="page"
+        className="navLink active"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#00D7C6",
+            "fontSize": "20px",
+            "fontWeight": "900",
+          }
+        }
+      >
+        Rockets
+      </a>
+    </li>
+    <li
+      className="navigationItem"
+    >
+      <a
+        className="navLink"
+        href="/missions"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "none",
+            "fontSize": "regular",
+            "fontWeight": "regular",
+          }
+        }
+      >
+        Missions
+      </a>
+    </li>
+    <li
+      className="navigationItem"
+    >
+      <a
+        className="navLink"
+        href="/profile"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "none",
+            "fontSize": "regular",
+            "fontWeight": "regular",
+          }
+        }
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

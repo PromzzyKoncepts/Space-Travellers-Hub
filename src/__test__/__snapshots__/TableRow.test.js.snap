@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Component correctly 1`] = `
+<tr
+  className="tableRow"
+  style={
+    Object {
+      "backgroundColor": "white",
+    }
+  }
+>
+  <td
+    className="flex1"
+  />
+  <td
+    className="flex5"
+  />
+  <td
+    className="flex1"
+  >
+    <div
+      className="status1"
+    >
+      Not a member
+    </div>
+  </td>
+  <td
+    className="flex1"
+  >
+    <button
+      className="normalBtn"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;
