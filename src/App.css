@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Montserrat&family=Poppins&family=Roboto:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 90%;
+  border-bottom: solid 1px #999;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logoText {
+  font-size: 22px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navigationItem {
+  list-style: none;
+}
+
+/* this part is for the rockets  */
+.card-container {
+  display: flex;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.images {
+  width: 400px;
+}
+
+.btn {
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 550;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  box-shadow: 0 0 7px #999;
+}
+
+.btn:active {
+  border: 1px solid #fff;
+}
+
+.tableContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table {
+  width: 90%;
+}
+
+.tableRow {
+  display: flex;
+  width: 100%;
+}
+
+.tableHeader {
+  border: solid 1px #999;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1.5;
+  border: solid 1px #999;
+  padding: 5px;
+}
+
+.flex5 {
+  flex: 5;
+  border: solid 1px #999;
+  padding: 5px;
+}
+
+.rvBtn {
+  padding: 5px;
+  background-color: #eee;
+  color: red;
+  border-color: red;
+  outline: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.normalBtn {
+  padding: 5px;
+  background-color: white;
+  color: green;
+  border-color: green;
+  outline: green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status1 {
+  font-size: 14px;
+  background-color: #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.status2 {
+  font-size: 14px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.myMissions {
+  flex: 1;
+}
+
+.myRockets {
+  flex: 1;
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  border: solid 1px #999;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
