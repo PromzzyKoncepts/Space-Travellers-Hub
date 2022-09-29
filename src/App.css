@@ -79,6 +79,16 @@
   margin-top: 20px;
   font-weight: 550;
   color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  box-shadow: 0 0 7px #999;
+}
+
+.btn:active {
+  border: 1px solid #fff;
 }
 
 .tableContainer {
@@ -124,6 +134,7 @@
   border-color: red;
   outline: red;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .normalBtn {
@@ -133,6 +144,7 @@
   border-color: green;
   outline: green;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .status1 {
