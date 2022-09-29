@@ -5,41 +5,41 @@ const FETCH = 'redux/RocketScreen/rocketscreen/FETCH';
 const url = 'https://api.spacexdata.com/v3/rockets';
 
 const fetchRockets = createAsyncThunk(FETCH, async () => fetch(url).then((res) => res.json()));
-const postSlice = createSlice({
-  name: 'posts',
+const rocketslice = createSlice({
+  name: 'rockets',
   initialState: {
-    posts: [],
+    rockets: [],
     loading: 'idle',
   },
   reducers: {
     reserveRocket: (state, action) => {
-      const posts = state.posts.map((item) => {
+      const rockets = state.rockets.map((item) => {
         if (item.id === action.payload) {
           item = { ...item, reserved: true };
           return item;
         }
         return item;
       });
-      return { ...state, posts };
+      return { ...state, rockets };
     },
     leaveRocket: (state, action) => {
-      const posts = state.posts.map((item) => {
+      const rockets = state.rockets.map((item) => {
         if (item.id === action.payload) {
           item = { ...item, reserved: false };
           return item;
         }
         return item;
       });
-      return { ...state, posts };
+      return { ...state, rockets };
     },
   },
   extraReducers: {
     [fetchRockets.fulfilled]: (state, action) => {
-      state.posts = action.payload;
+      state.rockets = action.payload;
       state.loading = 'fulfiled';
     },
   },
 });
-export const { reserveRocket, leaveRocket } = postSlice.actions;
+export const { reserveRocket, leaveRocket } = rocketslice.actions;
 export { fetchRockets };
-export default postSlice.reducer;
+export default rocketslice.reducer;
