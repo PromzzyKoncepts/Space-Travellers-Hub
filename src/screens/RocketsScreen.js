@@ -5,7 +5,7 @@ import { fetchRockets } from '../Redux/RocketScreen/rocketscreen';
 import Rockets from '../components/Rockets';
 
 function RocketsScreen() {
-  const { posts, loading } = useSelector((state) => state.post);
+  const { rockets, loading } = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
   useEffect(() => {
     if (loading === 'idle') {
@@ -19,7 +19,7 @@ function RocketsScreen() {
   return (
     <div className="App">
       <Navbar />
-      {posts.map((item) => (
+      {rockets.map((item) => (
         <Rockets
           key={item.id}
           id={item.id}
