@@ -5,9 +5,9 @@ import ProfileCard from '../components/ProfileCard';
 
 function ProfileScreen() {
   const { missions } = useSelector((state) => state.missions);
-  const { posts } = useSelector((state) => state.post);
+  const { rockets } = useSelector((state) => state.rocket);
   const profileMisions = missions.filter((item) => item.reserved === true);
-  const profileRockets = posts.filter((item) => item.reserved === true);
+  const profileRockets = rockets.filter((item) => item.reserved === true);
   const missionstoRender = profileMisions.map((item) => (
     <ProfileCard key={item.mission_id} name={item.mission_name} />
   ));

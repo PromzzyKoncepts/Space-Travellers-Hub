@@ -13,9 +13,19 @@
 - Redux
 - WebPack 
 
-## Live Demo (if available)
+## Live Demo 
 
 [Live Demo Link](https://spacehubb.netlify.app/)
+
+## ScreenShots
+### Rockets
+<img src="./Screenshots/Rockets.png" alt="Rockets" width="600px"/>
+
+### Missions
+<img src="./Screenshots/Missions.png" alt="Missions" width="600px"/>
+
+### Profile
+<img src="./Screenshots/ProfileScreen.png" alt="Profile" width="600px"/>
 
 
 ## Getting Started
@@ -30,13 +40,13 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone the repository by running the following command in your terminal:
-    git clone https://github.com/HabibPayenda/mathMagicians.git
+    git clone https://github.com/PromzzyKoncepts/Space-Travellers-Hub.git
     
 - Change your directory by by running the following command in your terminal:
     cd space-hub
 
 ### Install
-- Install the dependencies by running npm i in your terminal
+- Install the dependencies by running `npm i` in your terminal
 
 ### Usage
 
