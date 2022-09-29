@@ -18,9 +18,14 @@
 [Live Demo Link](https://spacehubb.netlify.app/)
 
 ## ScreenShots
-<img src="./Rockets.png" alt="Rockets" width="500px"/>
-<img src="./Missions.png" alt="Missions" width="500px"/>
-<img src="./ProfileScreen.png" alt="Profile" width="500px"/>
+### Rockets
+<img src="./Screenshots/Rockets.png" alt="Rockets" width="600px"/>
+
+### Missions
+<img src="./Screenshots/Missions.png" alt="Missions" width="600px"/>
+
+### Profile
+<img src="./Screenshots/ProfileScreen.png" alt="Profile" width="600px"/>
 
 
 ## Getting Started
